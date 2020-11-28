@@ -1,20 +1,37 @@
-/* Normalising CSS by Universal selector */
+/*      Normalising CSS by Universal selector       */
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
-    /* box-sizing defines how width & height of ele are calculated */
+    /* box-sizing defines how width & height of ele. are calculated */
 }
 
-/* Parent element setup - Project wide */
+/*      Parent element setup - Project wide     */
 body {
     font-family: Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
-}
-
-.main-container {
     width: 100vw;
     height: 100vh;
-    padding: 0 2em;
+    padding: 0 16px;
+}
+
+
+/*      NAVBAR      */
+.navbar {
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 10px;
+    font-size: 13px;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #777;
 }
